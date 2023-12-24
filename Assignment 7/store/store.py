@@ -16,7 +16,25 @@ def read_from_database():
 
 
 def write_to_database():
-    ...
+    f=open("database.txt","w")
+    code='code'
+    name='name'
+    price='price'
+    count='count'
+    for item in PRODUCTS:
+        res=""
+        res+=str(item[code])
+        res+=","
+        res+=str(item[name])
+        res+=","
+        res+=str(item[price])
+        res+=","
+        res+=str(item[count])
+        f.write(res)
+        f.write("\n")
+
+
+    f.close()
     
 
 
@@ -35,7 +53,7 @@ def add():
     name=input("Enter name: ")
     price=input("Enter price: ")
     count=input("Enter count: ")
-    new_product={"code":code,"name":name,"price":price,"cont":count}
+    new_product={"code":code,"name":name,"price":price,"count":count}
     PRODUCTS.append(new_product)
 
 
