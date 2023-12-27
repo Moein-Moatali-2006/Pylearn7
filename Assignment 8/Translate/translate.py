@@ -3,17 +3,21 @@
 from pyfiglet import figlet_format
 from termcolor2 import colored
 from gtts import gTTS
+from os import path
 
 def read_from_file():
-    global words_bank
-    f=open("Translate\data_base_words.txt","r")
-    temp=f.read().split("\n")
-    words_bank=[]
-    for i in range(0,len(temp),2):
-        my_dict={"en":temp[i],"fa":temp[i+1]}
-        words_bank.append(my_dict)
+    if path.exists("Translate\data_base_words.txt"):
+        global words_bank
+        f=open("Translate\data_base_words.txt","r")
+        temp=f.read().split("\n")
+        words_bank=[]
+        for i in range(0,len(temp),2):
+            my_dict={"en":temp[i],"fa":temp[i+1]}
+            words_bank.append(my_dict)
 
-    f.close()
+        f.close()
+    else:
+        print("file not found")
 
 
 
@@ -64,6 +68,7 @@ def translate_persian_to_english():
 
 
 def add_a_new_word_to_database():
+    
     english=input("write english word: ")
     persian=input("write persian word: ")
     f= open("Translate\data_base_words.txt","a")
