@@ -17,7 +17,7 @@ def read_from_file():
 
         f.close()
     else:
-        print("file not found")
+        print(colored("file not found",color="red"))
 
 
 
