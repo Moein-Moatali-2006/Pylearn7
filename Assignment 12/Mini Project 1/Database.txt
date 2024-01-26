@@ -1,4 +1,4 @@
-Series,Peaky Blinders,Otto Bathurst,8.8,https,60,Cillian Murphy
-Film,The Godfather,Francis Ford Coppola,9.2,https,180,Al Pacino
-Documentary,Cosmos,Tyson returns,9.3,https,100,Neil deGrasse Tyson
-Clip,Tina,Tina Turner,7.3,https,5,Tina Turner
+Series,Peaky Blinders,Otto Bathurst,8.8,https://youtube.com/shorts/1Ps3JnXxjVQ?si=wzEKHGPKv-QO7buf,60,Cillian Murphy
+Film,The Godfather,Francis Ford Coppola,9.2,https://youtube.com/shorts/KC1w5qdGeEY?si=mrb9S5YbCGsak6gP,180,Al Pacino
+Documentary,Cosmos,Tyson returns,9.3,https://youtu.be/uHlIdfZKrfs?si=3H27PKgfBjHbV_Cw,100,Neil deGrasse Tyson
+Clip,Tina,Tina Turner,7.3,https://youtu.be/oGpFcHTxjZs?si=2AH1ix_T3BGxmHnb,5,Tina Turner
