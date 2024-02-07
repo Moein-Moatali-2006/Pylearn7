@@ -5,4 +5,4 @@ pip install arcade
 ```
 Be careful, you don't have 3 more chances!\
 ## A photo of the game environment:
-![Interstellar game](Images\result.png)
+![Interstellar game](https://github.com/Moein-Moatali-2006/Pylearn7/blob/main/Game/Assignment%2014/Images/result.png)
