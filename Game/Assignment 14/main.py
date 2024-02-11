@@ -7,7 +7,7 @@ from heart import Heart
 
 class Game(arcade.Window):
     def __init__(self):
-        super().__init__(width=900,height=600,title='Moein Moatali')
+        super().__init__(width=600,height=600,title='Moein Moatali')
         arcade.set_background_color(arcade.color.DARK_BLUE)
         # self.background=arcade.load_texture(":resources:images/backgrounds/stars.png")
         self.background=arcade.load_texture("Images\BG.jpg")
@@ -44,6 +44,7 @@ class Game(arcade.Window):
             arcade.set_background_color(arcade.color.BLACK)
             arcade.draw_text("GAME OVER",self.width/3.5, self.height/2, arcade.color.RED, 36, 20)
             self.background= arcade.load_texture(":resources:images/backgrounds/stars.png")
+            print("Your Score:",self.score)
 
 
 
@@ -71,11 +72,7 @@ class Game(arcade.Window):
             if enemy.center_y <20:
                 self.enemy_list.remove(enemy)
                 self.heart_list.pop()
-
-                    
-        if self.heart_list == []:
-            print("Your Score:",self.score)
-            exit(0)     
+    
 
         self.me.move()
       
