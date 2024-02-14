@@ -36,6 +36,6 @@ cmd ---> python3 main_AI.py
 ```
 # Pictures:
 
-![Snake game](https://github.com/Moein-Moatali-2006/Pylearn7/blob/main/Game/Assignment%2014/Images/result.png)
+![Snake game](https://github.com/Moein-Moatali-2006/Pylearn7/blob/main/Game/Assignment%2015/pictures/snake_game.png)
 
-![Snake game with AI](https://github.com/Moein-Moatali-2006/Pylearn7/blob/main/Game/Assignment%2014/Images/result.png)
+![Snake game with AI](https://github.com/Moein-Moatali-2006/Pylearn7/blob/main/Game/Assignment%2015/pictures/Snake_with_AI.png)
