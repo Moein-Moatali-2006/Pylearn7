@@ -34,22 +34,9 @@ class Game(arcade.Window):
 
         arcade.finish_render()
 
-    def on_key_release(self, symbol: int, modifiers: int):
-        if symbol == arcade.key.UP:
-            self.snake.change_x=0
-            self.snake.change_y=1
-        elif symbol == arcade.key.DOWN:
-            self.snake.change_x=0
-            self.snake.change_y=-1
-        elif symbol == arcade.key.LEFT:
-            self.snake.change_x=-1
-            self.snake.change_y=0
-        elif symbol == arcade.key.RIGHT:
-            self.snake.change_x=1
-            self.snake.change_y=0
 
     def on_update(self, delta_time: float):
-        self.snake.move()
+        self.snake.move_ai(self.food.center_x,self.food.center_y)
 
         if (self.snake.center_x > self.width) or (self.snake.center_x < 0) or (self.snake.center_y > self.height) or (self.snake.center_y < 0):
             self.end_play=True
@@ -67,11 +54,6 @@ class Game(arcade.Window):
             self.snake.eat(self.shit)
             self.shit=PP(self)
             self.snake.score = self.snake.score - 2
-        
-        
-        for part in self.snake.body:
-            if self.snake.center_x == part["x"] and self.snake.center_y == part["y"]:
-                self.end_play=True
         
 
         if self.snake.score < 0 :

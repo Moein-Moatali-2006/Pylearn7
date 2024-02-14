@@ -38,6 +38,24 @@ class Snake(arcade.Sprite):
         self.center_x += self.change_x * self.speed
         self.center_y += self.change_y * self.speed
 
+
+    def move_ai(self,center_x,center_y):
+        self.body.append({"x" : self.center_x , "y" : self.center_y})
+        if len(self.body) > self.score :
+            self.body.pop(0)
+
+        if self.center_y > center_y:
+            self.center_y -= self.speed
+
+        if self.center_y < center_y:
+            self.center_y += self.speed
+
+        if self.center_x < center_x:
+            self.center_x += self.speed
+            
+        if self.center_x > center_x:
+            self.center_x -= self.speed
+
         
 
 
