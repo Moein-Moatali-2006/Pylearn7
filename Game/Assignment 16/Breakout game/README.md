@@ -6,7 +6,7 @@ Rules of the game :
 * Moving the racket is possible with both the keyboard and the mouse.
 
 # Picture game:
-!["Breakout"](pictures\result.png)
+!["Breakout"](https://github.com/Moein-Moatali-2006/Pylearn7/blob/main/Game/Assignment%2016/Breakout%20game/pictures/result.png)
 
 # How to run game?
 ```
