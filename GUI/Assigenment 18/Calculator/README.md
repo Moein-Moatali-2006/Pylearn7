@@ -3,7 +3,7 @@
 This project is a graphical calculator with an attractive and user-friendly interface, written using powerful Python libraries such as sys, math, sympy, functools and PySide6. This calculator is capable of performing various mathematical calculations, including basic operations, equations.
 
 
-[Picture]("photoes\result.png")
+[Picture](https://github.com/Moein-Moatali-2006/Pylearn7/blob/main/GUI/Assigenment%2018/Calculator/photoes/result.png)
 
 ## You must install PySide6 (QT for python):
 ```
