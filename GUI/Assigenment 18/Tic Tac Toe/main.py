@@ -2,95 +2,76 @@ import sys
 from functools import partial
 from PySide6.QtWidgets import QApplication,QMessageBox
 from PySide6.QtUiTools import QUiLoader
-from PySide6 import QtWidgets
 
 player_1_score = 0
 player_2_score = 0
+
+def check_x():
+        global player_1_score
+        msg_box=QMessageBox(text="player X wine! 🤩 😍 ❤️ 🌹 ")
+        msg_box.show()
+        player_1_score += 1
+        msg_box.exec()
+
+def check_O():
+        global player_1_score
+        msg_box=QMessageBox(text="player O wine! 🤩 😍 ❤️ 🌹 ")
+        msg_box.show()
+        player_2_score += 1
+        msg_box.exec()
 
 def check():
     global player_1_score
     global player_2_score
     if buttons[0][0].text()=="X" and buttons[0][1].text()=="X" and buttons[0][2].text()=="X":
-        msg_box=QMessageBox(text="player X wine! 🤩 😍 ❤️ 🌹 ")
-        msg_box.show()
-        player_1_score += 1
-        msg_box.exec()
+        check_x()
+        return
     elif buttons[1][0].text()=="X" and buttons[1][1].text()=="X" and buttons[1][2].text()=="X":
-        msg_box=QMessageBox(text="player X wine! 🤩 😍 ❤️ 🌹 ")
-        msg_box.show()
-        player_1_score += 1
-        msg_box.exec()
+        check_x()
+        return
     elif buttons[2][0].text()=="X" and buttons[2][1].text()=="X" and buttons[2][2].text()=="X":
-        msg_box=QMessageBox(text="player X wine! 🤩 😍 ❤️ 🌹 ")
-        msg_box.show()
-        player_1_score += 1
-        msg_box.exec()
+        check_x()
+        return
     elif buttons[0][0].text()=="X" and buttons[1][0].text()=="X" and buttons[2][0].text()=="X":
-        msg_box=QMessageBox(text="player X wine! 🤩 😍 ❤️ 🌹 ")
-        msg_box.show()
-        player_1_score += 1
-        msg_box.exec()
+        check_x()
+        return
     elif buttons[0][1].text()=="X" and buttons[1][1].text()=="X" and buttons[2][1].text()=="X":
-        msg_box=QMessageBox(text="player X wine! 🤩 😍 ❤️ 🌹 ")
-        msg_box.show()
-        player_1_score += 1
-        msg_box.exec()
+        check_x()
+        return
     elif buttons[0][2].text()=="X" and buttons[1][2].text()=="X" and buttons[2][2].text()=="X":
-        msg_box=QMessageBox(text="player X wine! 🤩 😍 ❤️ 🌹 ")
-        msg_box.show()
-        player_1_score += 1
-        msg_box.exec()
+        check_x()
+        return
     elif buttons[0][0].text()=="X" and buttons[1][1].text()=="X" and buttons[2][2].text()=="X":
-        msg_box=QMessageBox(text="player X wine! 🤩 😍 ❤️ 🌹 ")
-        msg_box.show()
-        player_1_score += 1
-        msg_box.exec()
+        check_x()
+        return
     elif buttons[0][2].text()=="X" and buttons[1][1].text()=="X" and buttons[2][0].text()=="X":
-        msg_box=QMessageBox(text="player X wine! 🤩 😍 ❤️ 🌹 ")
-        msg_box.show()
-        player_1_score += 1
-        msg_box.exec()
+        check_x()
+        return
     #
     if buttons[0][0].text()=="O" and buttons[0][1].text()=="O" and buttons[0][2].text()=="O":
-        msg_box=QMessageBox(text="player O wine! 🤩 😍 ❤️ 🌹 ")
-        msg_box.show()
-        player_2_score += 1
-        msg_box.exec()
+        check_O()
+        return
     elif buttons[1][0].text()=="O" and buttons[1][1].text()=="O" and buttons[1][2].text()=="O":
-        msg_box=QMessageBox(text="player O wine! 🤩 😍 ❤️ 🌹 ")
-        msg_box.show()
-        player_2_score += 1
-        msg_box.exec()
+        check_O()
+        return
     elif buttons[2][0].text()=="O" and buttons[2][1].text()=="O" and buttons[2][2].text()=="O":
-        msg_box=QMessageBox(text="player O wine! 🤩 😍 ❤️ 🌹 ")
-        msg_box.show()
-        player_2_score += 1
-        msg_box.exec()
+        check_O()
+        return
     elif buttons[0][0].text()=="O" and buttons[1][0].text()=="O" and buttons[2][0].text()=="O":
-        msg_box=QMessageBox(text="player O wine! 🤩 😍 ❤️ 🌹 ")
-        msg_box.show()
-        player_2_score += 1
-        msg_box.exec()
+        check_O()
+        return
     elif buttons[0][1].text()=="O" and buttons[1][1].text()=="O" and buttons[2][1].text()=="O":
-        msg_box=QMessageBox(text="player O wine! 🤩 😍 ❤️ 🌹 ")
-        msg_box.show()
-        player_2_score += 1
-        msg_box.exec()
+        check_O()
+        return
     elif buttons[0][2].text()=="O" and buttons[1][2].text()=="O" and buttons[2][2].text()=="O":
-        msg_box=QMessageBox(text="player O wine! 🤩 😍 ❤️ 🌹 ")
-        msg_box.show()
-        player_2_score += 1
-        msg_box.exec()
+        check_O()
+        return
     elif buttons[0][0].text()=="O" and buttons[1][1].text()=="O" and buttons[2][2].text()=="O":
-        msg_box=QMessageBox(text="player O wine! 🤩 😍 ❤️ 🌹 ")
-        msg_box.show()
-        player_2_score += 1
-        msg_box.exec()
+        check_O()
+        return
     elif buttons[0][2].text()=="O" and buttons[1][1].text()=="O" and buttons[2][0].text()=="O":
-        msg_box=QMessageBox(text="player O wine! 🤩 😍 ❤️ 🌹 ")
-        msg_box.show()
-        player_2_score += 1
-        msg_box.exec()
+        check_O()
+        return
 
     count=0
     for i in range(3):
@@ -103,13 +84,10 @@ def check():
         msg_box.show()
         msg_box.exec()
 
-
-
 def about():
     msg_box =QMessageBox(text="This is the TIC TAC TOE game ❤️")
     msg_box.show()
     msg_box.exec()
-
 
 def paly(row,col):
     global player
@@ -127,14 +105,12 @@ def paly(row,col):
     #glo ... 
     main_window.lineEdit_X.setText(str(player_1_score))
     main_window.lineEdit_O.setText(str(player_2_score))
-
-    
+  
 def new_game():
     for i in range(3):
         for x in range(3):
             buttons[i][x].setText("")
             buttons[i][x].setStyleSheet("background-color:white;")
-
 
 loader=QUiLoader()
 app=QApplication(sys.argv)
@@ -146,7 +122,6 @@ player=1
 buttons=[[main_window.btn_1,main_window.btn_2,main_window.btn_3],
          [main_window.btn_4,main_window.btn_5,main_window.btn_6],
          [main_window.btn_7,main_window.btn_8,main_window.btn_9]]
-
 
 for i in range(3):
     for x in range(3):
