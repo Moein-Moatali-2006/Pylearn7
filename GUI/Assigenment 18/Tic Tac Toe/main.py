@@ -14,7 +14,7 @@ def check_x():
         msg_box.exec()
 
 def check_O():
-        global player_1_score
+        global player_2_score
         msg_box=QMessageBox(text="player O wine! 🤩 😍 ❤️ 🌹 ")
         msg_box.show()
         player_2_score += 1
