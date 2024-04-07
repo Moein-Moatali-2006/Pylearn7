@@ -5,6 +5,8 @@ from functools import partial
 from PySide6.QtWidgets import QApplication
 from PySide6.QtUiTools import QUiLoader
 
+operator=""
+
 def use_math(math_op):
     if math_op == "sin":
         number = eval(main_window.textbox.text())
@@ -45,6 +47,9 @@ def equal():
             main_window.textbox.setText("Zero Error")
 
     main_window.textbox.setText(str(result))
+   
+    
+
 
 def operators(op):
     global first_number
@@ -60,11 +65,16 @@ def operators(op):
 
 def clear():
     main_window.textbox.setText("")
+    main_window.textbox_2.setText("")
+
 
 def number(add):
+    global text_2
     old_number=main_window.textbox.text()
     new_number=old_number+add
     main_window.textbox.setText(new_number)
+    text_2=main_window.textbox.text()
+    main_window.textbox_2.setText( operator + text_2)
 
 
 loader=QUiLoader()
