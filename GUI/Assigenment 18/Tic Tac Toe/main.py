@@ -1,3 +1,4 @@
+import random
 import sys
 from functools import partial
 from PySide6.QtWidgets import QApplication,QMessageBox
@@ -5,6 +6,12 @@ from PySide6.QtUiTools import QUiLoader
 
 player_1_score = 0
 player_2_score = 0
+
+def cpu():
+    msg=QMessageBox(text="I'm so sorry! I don't have idea.")
+    msg.exec()
+    pass
+
 
 def check_x():
         global player_1_score
@@ -112,16 +119,27 @@ def new_game():
             buttons[i][x].setText("")
             buttons[i][x].setStyleSheet("background-color:white;")
 
+def on_toggled(checked):
+    if checked:
+        pass
+    else:
+        cpu()
+
+
 loader=QUiLoader()
 app=QApplication(sys.argv)
 main_window=loader.load("main.ui")
 
 main_window.show()
-player=1
+player=random.randint(1,2)
 
 buttons=[[main_window.btn_1,main_window.btn_2,main_window.btn_3],
          [main_window.btn_4,main_window.btn_5,main_window.btn_6],
          [main_window.btn_7,main_window.btn_8,main_window.btn_9]]
+
+
+radio_button_friend=main_window.radio_friend
+radio_button_friend.toggled.connect(partial(on_toggled))
 
 for i in range(3):
     for x in range(3):
