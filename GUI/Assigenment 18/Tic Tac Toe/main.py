@@ -8,9 +8,9 @@ player_1_score = 0
 player_2_score = 0
 
 def cpu():
-    msg=QMessageBox(text="I'm so sorry! I don't have idea.")
-    msg.exec()
-    pass
+    for i in range(3):
+            for x in range(3):
+                buttons[i][x].clicked.connect(partial(paly,random.randint(0,2),random.randint(0,2)))
 
 
 def check_x():
@@ -121,7 +121,9 @@ def new_game():
 
 def on_toggled(checked):
     if checked:
-        pass
+        for i in range(3):
+            for x in range(3):
+                buttons[i][x].clicked.connect(partial(paly,i,x))
     else:
         cpu()
 
@@ -141,9 +143,7 @@ buttons=[[main_window.btn_1,main_window.btn_2,main_window.btn_3],
 radio_button_friend=main_window.radio_friend
 radio_button_friend.toggled.connect(partial(on_toggled))
 
-for i in range(3):
-    for x in range(3):
-        buttons[i][x].clicked.connect(partial(paly,i,x))
+
 
 main_window.btn_about.clicked.connect(partial(about))
 main_window.btn_new_game.clicked.connect(partial(new_game))
