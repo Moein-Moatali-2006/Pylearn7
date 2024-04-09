@@ -6,342 +6,577 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>260</width>
-    <height>521</height>
+    <width>288</width>
+    <height>539</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color:rgb(128, 28, 148);
+   <string notr="true">background-color: rgb(255, 255, 255);
 </string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QWidget" name="gridLayoutWidget">
+   <widget class="QPushButton" name="newgame">
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>130</y>
-      <width>221</width>
-      <height>241</height>
+      <y>460</y>
+      <width>181</width>
+      <height>31</height>
      </rect>
     </property>
-    <layout class="QGridLayout" name="gridLayout">
-     <item row="1" column="1">
-      <widget class="QPushButton" name="btn_5">
-       <property name="font">
-        <font>
-         <pointsize>40</pointsize>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color:rgb(255, 255, 255);</string>
-       </property>
-       <property name="text">
-        <string/>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="2">
-      <widget class="QPushButton" name="btn_3">
-       <property name="font">
-        <font>
-         <pointsize>40</pointsize>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color:rgb(255, 255, 255);</string>
-       </property>
-       <property name="text">
-        <string/>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="1">
-      <widget class="QPushButton" name="btn_2">
-       <property name="font">
-        <font>
-         <pointsize>40</pointsize>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color:rgb(255, 255, 255);</string>
-       </property>
-       <property name="text">
-        <string/>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="0">
-      <widget class="QPushButton" name="btn_4">
-       <property name="font">
-        <font>
-         <pointsize>40</pointsize>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color:rgb(255, 255, 255);</string>
-       </property>
-       <property name="text">
-        <string/>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="0">
-      <widget class="QPushButton" name="btn_1">
-       <property name="font">
-        <font>
-         <pointsize>40</pointsize>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color:rgb(255, 255, 255);</string>
-       </property>
-       <property name="text">
-        <string/>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="2">
-      <widget class="QPushButton" name="btn_6">
-       <property name="font">
-        <font>
-         <pointsize>40</pointsize>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color:rgb(255, 255, 255);</string>
-       </property>
-       <property name="text">
-        <string/>
-       </property>
-      </widget>
-     </item>
-     <item row="2" column="0">
-      <widget class="QPushButton" name="btn_7">
-       <property name="font">
-        <font>
-         <pointsize>40</pointsize>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color:rgb(255, 255, 255);</string>
-       </property>
-       <property name="text">
-        <string/>
-       </property>
-      </widget>
-     </item>
-     <item row="2" column="1">
-      <widget class="QPushButton" name="btn_8">
-       <property name="font">
-        <font>
-         <pointsize>40</pointsize>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color:rgb(255, 255, 255);</string>
-       </property>
-       <property name="text">
-        <string/>
-       </property>
-      </widget>
-     </item>
-     <item row="2" column="2">
-      <widget class="QPushButton" name="btn_9">
-       <property name="font">
-        <font>
-         <pointsize>40</pointsize>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color:rgb(255, 255, 255);</string>
-       </property>
-       <property name="text">
-        <string/>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </widget>
-   <widget class="QPushButton" name="btn_new_game">
-    <property name="geometry">
-     <rect>
-      <x>30</x>
-      <y>400</y>
-      <width>131</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>15</pointsize>
-      <bold>true</bold>
-     </font>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+      <horstretch>0</horstretch>
+      <verstretch>5</verstretch>
+     </sizepolicy>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color:rgb(213, 142, 0);
-color:rgb(0, 139, 0);</string>
+     <string notr="true">font: 800 16pt &quot;Dosis ExtraBold&quot;;
+background-color: rgb(85, 85, 127);
+border-radius: 10px;
+border-style: outset;
+border-width:3px;
+border-color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>New Game</string>
     </property>
    </widget>
-   <widget class="QRadioButton" name="radio_friend">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>10</y>
-      <width>89</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">color:rgb(255, 255, 0);</string>
-    </property>
-    <property name="text">
-     <string>My friend</string>
-    </property>
-   </widget>
-   <widget class="QRadioButton" name="radio_computer">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>30</y>
-      <width>89</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">color:rgb(255, 255, 0);</string>
-    </property>
-    <property name="text">
-     <string>Computer</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>60</y>
-      <width>31</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>15</pointsize>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color:rgb(255, 170, 255);</string>
-    </property>
-    <property name="text">
-     <string> X:</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="lineEdit_X">
+   <widget class="QPushButton" name="turn">
     <property name="geometry">
      <rect>
       <x>60</x>
-      <y>60</y>
-      <width>41</width>
-      <height>41</height>
+      <y>10</y>
+      <width>108</width>
+      <height>31</height>
      </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+      <horstretch>0</horstretch>
+      <verstretch>5</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 800 16pt &quot;Dosis ExtraBold&quot;;
+background-color: rgb(255, 170, 0);
+border-radius: 10px;
+border-style: outset;
+border-width:3px;
+border-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>X`s Turn</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_8">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>230</y>
+      <width>81</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>15</verstretch>
+     </sizepolicy>
     </property>
     <property name="font">
      <font>
-      <pointsize>22</pointsize>
+      <pointsize>50</pointsize>
+      <bold>true</bold>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color:rgb(255, 255, 255);</string>
+     <string notr="true">background-color:rgb(127, 63, 190);
+border-radius: 10px;
+border-style: outset;
+border-width:3px;
+border-color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
-     <string>0</string>
-    </property>
-    <property name="readOnly">
-     <bool>true</bool>
+     <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label_2">
+   <widget class="QPushButton" name="btn_5">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>140</y>
+      <width>81</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>15</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>50</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(127, 63, 190);
+border-radius: 10px;
+border-style: outset;
+border-width:3px;
+border-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_6">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>140</y>
+      <width>81</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>15</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>50</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(127, 63, 190);
+border-radius: 10px;
+border-style: outset;
+border-width:3px;
+border-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="xscore">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>310</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+      <horstretch>0</horstretch>
+      <verstretch>7</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <family>Dosis ExtraBold</family>
+      <pointsize>16</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 0, 0);
+border-radius: 10px;
+border-style: outset;
+border-width:3px;
+border-color: rgb(255, 255, 255);
+</string>
+    </property>
+    <property name="text">
+     <string>X Score: 0</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="about">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>460</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 800 16pt &quot;Dosis ExtraBold&quot;;
+background-color: rgb(170, 85, 0);
+border-radius: 10px;
+border-style: outset;
+border-width:3px;
+border-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>About</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_9">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>230</y>
+      <width>81</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+      <horstretch>0</horstretch>
+      <verstretch>15</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>16777000</width>
+      <height>16777000</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial Rounded MT Bold</family>
+      <pointsize>50</pointsize>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(127, 63, 190);
+border-radius: 10px;
+border-style: outset;
+border-width:3px;
+border-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_4">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>140</y>
+      <width>81</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>15</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>50</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(127, 63, 190);
+border-radius: 10px;
+border-style: outset;
+border-width:3px;
+border-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_1">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>50</y>
+      <width>81</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>15</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>50</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(127, 63, 190);
+border-radius: 10px;
+border-style: outset;
+border-width:3px;
+border-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="oscore">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>340</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+      <horstretch>0</horstretch>
+      <verstretch>7</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <family>Dosis ExtraBold</family>
+      <pointsize>16</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 85, 255);
+border-radius: 10px;
+border-style: outset;
+border-width:3px;
+border-color: rgb(255, 255, 255);
+</string>
+    </property>
+    <property name="text">
+     <string>O Score: 0</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_2">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>50</y>
+      <width>81</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>15</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>50</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(127, 63, 190);
+border-radius: 10px;
+border-style: outset;
+border-width:3px;
+border-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_3">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>50</y>
+      <width>81</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>15</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>50</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(127, 63, 190);
+border-radius: 10px;
+border-style: outset;
+border-width:3px;
+border-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_7">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>230</y>
+      <width>81</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>15</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>50</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(127, 63, 190);
+border-radius: 10px;
+border-style: outset;
+border-width:3px;
+border-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="tie">
     <property name="geometry">
      <rect>
       <x>130</x>
-      <y>60</y>
-      <width>31</width>
-      <height>41</height>
+      <y>310</y>
+      <width>141</width>
+      <height>61</height>
      </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+      <horstretch>0</horstretch>
+      <verstretch>7</verstretch>
+     </sizepolicy>
     </property>
     <property name="font">
      <font>
-      <pointsize>15</pointsize>
+      <family>Dosis ExtraBold</family>
+      <pointsize>16</pointsize>
       <bold>true</bold>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color:rgb(0, 170, 255);</string>
+     <string notr="true">background-color: rgb(255, 255, 127);
+border-radius: 10px;
+border-style: outset;
+border-width:5px;
+border-color: rgb(255, 255, 255);
+
+</string>
     </property>
     <property name="text">
-     <string> O:</string>
+     <string>Ties: 0</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_O">
+   <widget class="QRadioButton" name="player2">
     <property name="geometry">
      <rect>
-      <x>180</x>
-      <y>60</y>
-      <width>41</width>
-      <height>41</height>
+      <x>10</x>
+      <y>370</y>
+      <width>261</width>
+      <height>31</height>
      </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+      <horstretch>0</horstretch>
+      <verstretch>5</verstretch>
+     </sizepolicy>
     </property>
     <property name="font">
      <font>
-      <pointsize>22</pointsize>
+      <family>Dosis ExtraBold</family>
+      <pointsize>16</pointsize>
+      <italic>false</italic>
+      <fontweight>ExtraBold</fontweight>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color:rgb(255, 255, 255);</string>
+     <string notr="true">font: 800 16pt &quot;Dosis ExtraBold&quot;;
+background-color: rgb(0, 85, 0);
+border-radius: 10px;
+border-style: outset;
+border-width:3px;
+border-color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
-     <string>0</string>
-    </property>
-    <property name="readOnly">
-     <bool>true</bool>
+     <string>player and player</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="btn_about">
+   <widget class="QRadioButton" name="cpu">
     <property name="geometry">
      <rect>
-      <x>180</x>
-      <y>400</y>
-      <width>51</width>
-      <height>41</height>
+      <x>10</x>
+      <y>410</y>
+      <width>261</width>
+      <height>31</height>
      </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+      <horstretch>0</horstretch>
+      <verstretch>5</verstretch>
+     </sizepolicy>
     </property>
     <property name="font">
      <font>
-      <pointsize>12</pointsize>
-      <bold>true</bold>
+      <family>Dosis ExtraBold</family>
+      <pointsize>16</pointsize>
+      <italic>false</italic>
+      <fontweight>ExtraBold</fontweight>
      </font>
     </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
     <property name="styleSheet">
-     <string notr="true">background-color:rgb(0, 90, 0);
-color:rgb(152, 76, 0);</string>
+     <string notr="true">font: 800 16pt &quot;Dosis ExtraBold&quot;;
+background-color:rgb(0, 85, 0);
+border-radius: 10px;
+border-style: outset;
+border-width:3px;
+border-color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
-     <string>about</string>
+     <string>player and cpu</string>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>10</width>
+      <height>10</height>
+     </size>
     </property>
    </widget>
   </widget>
@@ -350,7 +585,7 @@ color:rgb(152, 76, 0);</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>260</width>
+     <width>288</width>
      <height>22</height>
     </rect>
    </property>
