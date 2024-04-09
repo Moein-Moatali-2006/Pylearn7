@@ -1,8 +1,7 @@
 # Tic Tac Toe (GUI)
 
-
-این بخش تکمیل نشده :
-حالت player vs cpu و player vs player به کمک radio button
+.The possibility of playing with artificial intelligence\
+.The possibility of two people playing
 
 
 ## How to run this game?
@@ -15,6 +14,6 @@ you must install PySide6( QT for python)
 pip install PySide6
 ```
 
-![](https://github.com/Moein-Moatali-2006/Pylearn7/blob/main/GUI/Assigenment%2018/Tic%20Tac%20Toe/Pictures/result.png)
+![](https://github.com/Moein-Moatali-2006/Pylearn7/blob/main/GUI/Assigenment%2018/Tic%20Tac%20Toe/Pictures/Screenshot%202024-04-09%20232155.png)
 
 thank you for reading this readme 🌹.
