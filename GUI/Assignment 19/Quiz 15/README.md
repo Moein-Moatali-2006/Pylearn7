@@ -17,4 +17,4 @@ main_ui.ui
 main_ui.py
 ```
 # result:
-["result"](https://github.com/Moein-Moatali-2006/Pylearn7/blob/main/GUI/Assignment%2019/Quiz%2015/picture/result.png)
+!["result"](https://github.com/Moein-Moatali-2006/Pylearn7/blob/main/GUI/Assignment%2019/Quiz%2015/picture/result.png)
