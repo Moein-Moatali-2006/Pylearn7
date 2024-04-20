@@ -1,4 +1,4 @@
-# Quiz 15
+# Puzzle 15
 Quiz 15 game is a game full of mental challenges and you have to solve those challenges one by one and put all the numbers together.\
 In this game, the numbers between 1 and 15 are randomly placed in different places and you have to complete the challenge by changing their location.
 ## install game
