@@ -4,4 +4,4 @@ You can run the program by running the main.py file.
 
 ## You must have PySide6 installed
 
-![](1111)
+![](https://github.com/Moein-Moatali-2006/Pylearn7/blob/main/GUI/Assignment%2019/Translate/picture/result.png)
