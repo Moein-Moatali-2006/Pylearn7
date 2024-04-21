@@ -10,9 +10,9 @@ cmd ---> main.py
 ```
 
 ## result modes:
-Easy:
+### Easy:
 ![](https://github.com/Moein-Moatali-2006/Pylearn7/blob/main/GUI/Assignment%2019/Password%20Generator/picture/result1.png)
-Hard:
+### Hard:
 ![](https://github.com/Moein-Moatali-2006/Pylearn7/blob/main/GUI/Assignment%2019/Password%20Generator/picture/result2.png)
-Difficult:
+### Difficult:
 ![](https://github.com/Moein-Moatali-2006/Pylearn7/blob/main/GUI/Assignment%2019/Password%20Generator/picture/result3.png)
