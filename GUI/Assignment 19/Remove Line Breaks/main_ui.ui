@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="objectName">MainWindow</property>
+  <property name="geometry">
+   <rect x="300" y="300" width="800" height="600"/>
+  </property>
+  <property name="windowTitle">Remove Line Breaks</property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="objectName">centralWidget</property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLineEdit" name="inputLineEdit">
+      <property name="objectName">inputLineEdit</property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="removeButton">
+      <property name="objectName">removeButton</property>
+      <property name="text">Remove Line Breaks</property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTextEdit" name="outputTextEdit">
+      <property name="objectName">outputTextEdit</property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <menubar name="menuBar">
+   <property name="objectName">menuBar</property>
+   <menu name="fileMenu">
+    <property name="objectName">fileMenu</property>
+    <action name="actionOpen">
+     <property name="objectName">actionOpen</property>
+     <text>Open</text>
+     <triggered signal="triggered"/>
+    </action>
+    <action name="actionSave">
+     <property name="objectName">actionSave</property>
+     <text>Save</text>
+     <triggered signal="triggered"/>
+    </action>
+   </menu>
+  </menubar>
+  <toolbar name="mainToolBar">
+   <property name="objectName">mainToolBar</property>
+  </toolbar>
+  <statusbar name="statusBar">
+   <property name="objectName">statusBar</property>
+  </statusbar>
+ </widget>
+</ui>
