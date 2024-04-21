@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>299</width>
+    <height>437</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:rgb(85, 170, 0);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label_computer">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>10</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(170, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>Computer</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="computer_score">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>120</y>
+      <width>121</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(255, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string>computer_score:0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="player_score">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>150</y>
+      <width>91</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(255, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string>player_score:0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="show_player">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>240</y>
+      <width>101</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="win">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>140</y>
+      <width>161</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="show_computer">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>50</y>
+      <width>91</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_player">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>190</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Player</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_rock">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>310</y>
+      <width>71</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(170, 0, 127);</string>
+    </property>
+    <property name="text">
+     <string>Rock</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_paper">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>310</y>
+      <width>71</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(170, 0, 127);</string>
+    </property>
+    <property name="text">
+     <string>Paper</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_scissor">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>310</y>
+      <width>71</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(170, 0, 127);</string>
+    </property>
+    <property name="text">
+     <string>scissor</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>299</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
