@@ -26,4 +26,4 @@ pip install PySide6
 ```
 
 ## result :
-![]()
+![](https://github.com/Moein-Moatali-2006/Pylearn7/blob/main/GUI/Assignment%2019/Remove%20Line%20Breaks/picture/result.png)
