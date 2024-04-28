@@ -4,7 +4,7 @@ Rock paper scissors game with computer.
 
 ## How to run?
 ```
-cmd ---> main.py
+python main.py
 ```
 
 ## result:

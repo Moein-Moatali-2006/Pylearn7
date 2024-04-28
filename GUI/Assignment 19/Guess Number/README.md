@@ -4,7 +4,7 @@ Enter the number you want and check that number.
 
 ## How to run?
 ```
-main.py
+python main.py
 ```
 ### result :
 

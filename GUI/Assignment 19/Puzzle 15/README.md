@@ -4,7 +4,7 @@ In this game, the numbers between 1 and 15 are randomly placed in different plac
 ## install game
 You must first download the project from GitHub and load it in VScode, then:
 ```
-main.py 
+python main.py 
 ```
 Note that to run the game correctly, you must have the PySide6 library installed.
 ```
@@ -17,4 +17,4 @@ main_ui.ui
 main_ui.py
 ```
 # result:
-!["result"](https://github.com/Moein-Moatali-2006/Pylearn7/blob/main/GUI/Assignment%2019/Puzzle 15%2015/picture/result.png)
+!["result"](https://github.com/Moein-Moatali-2006/Pylearn7/blob/main/GUI/Assignment%2019/Puzzle%2015/picture/result.png)
