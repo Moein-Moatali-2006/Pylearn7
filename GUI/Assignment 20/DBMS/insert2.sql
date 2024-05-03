@@ -1,0 +1,9 @@
+INSERT INTO Products(id,name,price,count) VALUES (109,"Rug",8500,14);
+INSERT INTO Products(id,name,price,count) VALUES (101,"Glasses",400,20);
+INSERT INTO Products(id,name,price,count) VALUES (102,"Book",15,70);
+INSERT INTO Products(id,name,price,count) VALUES (103,"TV",1100,10);
+INSERT INTO Products(id,name,price,count) VALUES (104,"Watch",750,19);
+INSERT INTO Products(id,name,price,count) VALUES (105,"Phone",2300,80);
+INSERT INTO Products(id,name,price,count) VALUES (106,"Pillow",12,200);
+INSERT INTO Products(id,name,price,count) VALUES (107,"chair",150,3000);
+INSERT INTO Products(id,name,price,count) VALUES (108,"Coffee",3,20000);
