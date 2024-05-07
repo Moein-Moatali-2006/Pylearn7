@@ -1,4 +1,4 @@
-# PySynth:
+# Song:
 This is a library for making music.
 ## how install ?
 1-Clone the repository:
@@ -13,7 +13,15 @@ cd PySynth
 ```
 python3 setup.py install
 ```
-
+### how run ?
+```
+main.py
+```
+---
+---
+---
+---
+---
 # Store:
 Store app to work with Database(sqlite)
 
