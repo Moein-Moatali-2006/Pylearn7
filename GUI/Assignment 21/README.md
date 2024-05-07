@@ -1,4 +1,6 @@
 # Song:
+Library PySynth
+
 This is a library for making music.
 ## how install ?
 1-Clone the repository:
