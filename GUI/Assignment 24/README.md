@@ -1,7 +1,8 @@
 # without_using_multi_threading.py
 In this program, I wanted to convert some videos to an audio file without using Threading in Python, and it took about 31 seconds.
-[]()
-
+## output:
+[](https://github.com/Moein-Moatali-2006/Pylearn7/blob/main/GUI/Assignment%2024/result/test.png)
+## output:
 # using_multi_threading.py
 Now that job took 18.6 seconds using threading.
-[]()
+[](https://github.com/Moein-Moatali-2006/Pylearn7/blob/main/GUI/Assignment%2024/result/use_thread.png)
