@@ -18,6 +18,6 @@ Database.db
 Alarm information is located in the database file.\
 You can change the alarms through the program or the database itself.
 ### Images of the program :
-[](https://github.com/Moein-Moatali-2006/Pylearn7/blob/main/GUI/Assignment%2025/IMG/stopwatch.png)
-[](https://github.com/Moein-Moatali-2006/Pylearn7/blob/main/GUI/Assignment%2025/IMG/timer.png)
-[](https://github.com/Moein-Moatali-2006/Pylearn7/blob/main/GUI/Assignment%2025/IMG/worldclock.png)
+![](https://github.com/Moein-Moatali-2006/Pylearn7/blob/main/GUI/Assignment%2025/IMG/stopwatch.png)
+![](https://github.com/Moein-Moatali-2006/Pylearn7/blob/main/GUI/Assignment%2025/IMG/timer.png)
+![](https://github.com/Moein-Moatali-2006/Pylearn7/blob/main/GUI/Assignment%2025/IMG/worldclock.png)
