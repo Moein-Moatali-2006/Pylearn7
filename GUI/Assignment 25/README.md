@@ -9,7 +9,7 @@ import PySide6
 ```
 ## seven segment font
 To install font seven segment, you can visit the following site:
-https://www.dafont.com/seven-segment.font
+https://fontstruct.com/gallery/tag/10439/7%20Segment
 
 # DBMS
 ```
