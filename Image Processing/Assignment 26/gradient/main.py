@@ -11,4 +11,4 @@ for y in range(height):
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 
-cv2.imwrite('gradient\output.jpg', gradient)
+cv2.imwrite('gradient\output.png', gradient)
