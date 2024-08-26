@@ -6,13 +6,10 @@ def invert_color(file_path,name):
     row, col = image.shape
     for i in range(row):
         for j in range(col):
-            if image[i,j] > 180 :
-                image [i,j] = 0
-            elif image [i,j] < 180 :
-                image[i,j] = 255
+            image[i,j] = 255 - image[i,j]
 
-    cv.imwrite(f'{name}.jpg', image)
+    cv.imwrite(f'{name}.png', image)
 
 
-invert_color('invert\img_1.jpg',"invert\woman")
-invert_color('invert\img_2.jpg',"invert\man")
+invert_color('invert\img_1.png',"invert\woman")
+invert_color('invert\img_2.png',"invert\man")
