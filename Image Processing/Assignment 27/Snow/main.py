@@ -32,7 +32,7 @@ while True:
 
     cv2.imshow('Snow', frame)
     cap.write(frame)
-    if cv2.waitKey(30) & 0xFF == ord('q'):
+    if cv2.waitKey(25) & 0xFF == ord('q'):
         break
 
 cv2.destroyAllWindows()
