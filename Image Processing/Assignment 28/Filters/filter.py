@@ -2,10 +2,10 @@ import cv2
 
 
 face_sticker = cv2.imread("input\image_lion.png")
-
+lips_sticker = cv2.imread("input\image_lips.png")
 
 face_detect = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
-
+lips_detect = ...
 
 cap = cv2.VideoCapture(0)
 
