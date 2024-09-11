@@ -1,6 +1,7 @@
 # import Libraries
 import cv2
 
+
 # Load images 
 face_sticker = cv2.imread("input\image_lion.png")
 lips_sticker = cv2.imread("input\image_lips.png")
@@ -14,6 +15,13 @@ eye_detect_left = cv2.CascadeClassifier(cv2.data.haarcascades+'haarcascade_lefte
 
 # connect to webcam
 cap = cv2.VideoCapture(0)
+
+# ***
+_ , frame =cap.read()
+t1=frame.shape[0]
+t2=frame.shape[1]
+out=cv2.VideoWriter("output.avi",cv2.VideoWriter_fourcc(*'XVID'),30,(t2,t1))
+# ***
 
 # Filters active
 face_sticker_active = False
@@ -46,7 +54,7 @@ while True:
     # eyes lips active
     if eyes_lips_sticker_active:
         #lips
-        lips = lips_detect.detectMultiScale(gray, 1.01,190,minSize=[30,30],maxSize=[80,80])
+        lips = lips_detect.detectMultiScale(gray, 1.05,190,minSize=[30,30],maxSize=[80,80])
         for lip in lips:
             x,y,w,h=lip
             lips_resized=cv2.resize(lips_sticker,[w,h],interpolation=cv2.INTER_CUBIC)
@@ -86,6 +94,7 @@ while True:
        
     # show frame
     cv2.imshow("Webcam", frame)
+    out.write(frame)
 
     key = cv2.waitKey(1) & 0xFF
 
@@ -114,5 +123,6 @@ while True:
         break
 
 # Release of resources
+out.release()
 cap.release()
 cv2.destroyAllWindows()
