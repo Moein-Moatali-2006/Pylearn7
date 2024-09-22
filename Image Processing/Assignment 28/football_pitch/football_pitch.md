@@ -6,7 +6,7 @@ run project:
 python football.py 
 ```
 ## Result
-![Output](output\output.jpg)
+![Output](https://github.com/Moein-Moatali-2006/Pylearn7/blob/main/Image%20Processing/Assignment%2028/football_pitch/output/output.jpg)
 
 
 
