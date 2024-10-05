@@ -21,6 +21,7 @@ medianFrame = np.median(frames, axis=0).astype(dtype=np.uint8)
 # Display median frame
 cv2.imshow('frame', medianFrame)
 cv2.waitKey(0)
+cv2.imwrite("output.jpg",medianFrame)
 
 # Reset frame number to 0
 cap.set(cv2.CAP_PROP_POS_FRAMES, 0)
