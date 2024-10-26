@@ -42,15 +42,15 @@ output:
 
 ## Portrait
 input:
-![input1](images/example.png)
+![input1](https://github.com/Moein-Moatali-2006/Pylearn7/blob/main/Image%20Processing/Convolution%20and%20Histogram/Portrait/image.png)
 output:
-![output1](images/example.png)
+![output1](https://github.com/Moein-Moatali-2006/Pylearn7/blob/main/Image%20Processing/Convolution%20and%20Histogram/Portrait/blurred_image.png)
 
 
 
 ## Vertical and horizontal edge detection
 input:
-![input1](images/example.png)
+![input1](https://github.com/Moein-Moatali-2006/Pylearn7/blob/main/Image%20Processing/Convolution%20and%20Histogram/Vertical%20and%20horizontal%20edge%20detection/House.png)
 output:
-![output1](images/example.png)
-![output2](images/example.png)
+![output1](https://github.com/Moein-Moatali-2006/Pylearn7/blob/main/Image%20Processing/Convolution%20and%20Histogram/Vertical%20and%20horizontal%20edge%20detection/kernel_horizontal.png)
+![output2](https://github.com/Moein-Moatali-2006/Pylearn7/blob/main/Image%20Processing/Convolution%20and%20Histogram/Vertical%20and%20horizontal%20edge%20detection/kernel_vertical.png)
