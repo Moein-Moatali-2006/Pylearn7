@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 
 # بارگذاری تصویر به صورت مقیاس خاکستری
-image = cv2.imread("image.png", cv2.IMREAD_GRAYSCALE)
+image = cv2.imread("img_1.png", cv2.IMREAD_GRAYSCALE)
 
 # اعمال فیلتر GaussianBlur برای کاهش نویز تصویر
 mask = cv2.GaussianBlur(image, (55, 55), 0)
