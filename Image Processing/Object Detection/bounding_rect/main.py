@@ -35,19 +35,18 @@ def my_bounding_rect(contour):
 
     return x_min,y_min,w+1,h+1
 
-contour=[(100, 150), (150, 200), (200, 150), (150, 100), (250, 200), (220, 200)]
-x,y,w,h = my_bounding_rect(contour)
 
+contour = np.array([(100, 150), (150, 200), (200, 150), (150, 100), (250, 200), (220, 200)])
+
+print("my function [my_bounding_rect]:")
+x,y,w,h = my_bounding_rect(contour)
 print(f"x:{x}")
 print(f"y:{y}")
 print(f"w:{w}")
 print(f"h:{h}")
 
-print("------------------------------------")
 
-
-contour = np.array([[(100, 150), (150, 200), (200, 150), (150, 100), (250, 200), (220, 200)]], dtype=np.int32)
-
+print("opencv function [cv2.boundingRect]:")
 x, y, w, h = cv2.boundingRect(contour)
 print(f"x: {x}")
 print(f"y: {y}")
