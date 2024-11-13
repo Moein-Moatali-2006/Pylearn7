@@ -1,5 +1,6 @@
-import numpy as np
 import cv2
+import numpy as np
+
 
 def findContours(image, mode, method):
     image = image.astype(np.uint8)
@@ -40,7 +41,7 @@ def findContours(image, mode, method):
                 contour = trace_contour((y, x))
                 if contour:
                     contours.append(np.array(contour))
-    
+   
     
     hierarchy = np.array([]) 
     return contours, hierarchy
