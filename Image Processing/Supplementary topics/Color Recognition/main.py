@@ -20,18 +20,27 @@ while True:
     g = int(np.mean(g))
     r = int(np.mean(r))
     
-    if r>b and r>g:
-        text="Red"
-        color=(0,0,255)
-    elif g>r and g>b:
-        text="Green"
-        color=(0,255,0)
-    elif b>r and b>g:
-        text="Blue"
-        color=(255,0,0)
-    elif r > b and r > g and g > b:
-        text = "Orange"
-        color = (0, 165, 255)
+    if r > 110 and g > 110 and b > 110:
+        text = "White"
+        color = (255, 255, 255)
+    elif r < 60 and g < 60 and b < 60:
+        text = "Black"
+        color = (0, 0, 0)
+    elif r > g and r > b and g > 100:
+        text = "Yellow"
+        color = (0, 255, 255)
+    elif r > g and b > g:
+        text = "Purple"
+        color = (128, 0, 128)
+    elif g > r and g > b:
+        text = "Green"
+        color = (0, 255, 0)
+    elif b > r and b > g:
+        text = "Blue"
+        color = (255, 0, 0)
+    elif r > b and r > g:
+        text = "Red"
+        color = (0, 0, 255)
     else:
         text = "Unknown"
         color = (0, 0, 0)
@@ -44,9 +53,3 @@ while True:
 
 cap.release()
 cv2.destroyAllWindows()
-
-
-
-
-
-
