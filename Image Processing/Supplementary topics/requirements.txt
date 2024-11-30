@@ -1,0 +1,6 @@
+numpy
+cv2
+PySide6
+cryptography
+mediapipe
+PIL
