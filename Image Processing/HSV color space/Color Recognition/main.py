@@ -11,8 +11,15 @@ while True:
     ret , frame = cap.read()
     frame=cv2.flip(frame,1)
 
-    cv2.rectangle(frame,[100,100],[300,300],0,2)
-    mask = frame[100:300,100:300]
+    blurred_frame = cv2.GaussianBlur(frame, (51, 51), 0)
+    x1, y1 = 100, 100
+    x2, y2 = 300, 300
+    blurred_frame[y1:y2, x1:x2] = frame[y1:y2, x1:x2]
+
+
+
+    cv2.rectangle(blurred_frame,[100,100],[300,300],0,2)
+    mask = frame[y1:y2, x1:x2]
     
     mask_HSV = cv2.cvtColor(mask,cv2.COLOR_BGR2HSV)
 
@@ -42,8 +49,8 @@ while True:
         text_color = "White"
         color = (255, 255, 255)
 
-    cv2.putText(frame,text_color,[50,50],font,1,color)
-    cv2.imshow("Webcam",frame)
+    cv2.putText(blurred_frame,text_color,[50,50],font,1,color)
+    cv2.imshow("Webcam",blurred_frame)
     if cv2.waitKey(25) == ord("q"):
         break
 
